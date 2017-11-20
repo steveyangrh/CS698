@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.1)  19 NOV 2017 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.1)  19 NOV 2017 21:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -673,139 +673,129 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 72.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+LaTeX Font Info:    No file OMScmss.fd. on input line 72.
 
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 73.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 73.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 73.
+(Font)              for symbol `textbullet' on input line 72.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 74.
+(Font)              <10.95> on input line 73.
+<images/mySelfieOriginal.png, id=1, 692.5875pt x 721.94719pt>
+File: images/mySelfieOriginal.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--83
+<use images/mySelfieOriginal.png>
+Package pdftex.def Info: images/mySelfieOriginal.png used on input line 85.
+(pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
 
+Underfull \hbox (badness 3354) in paragraph at lines 86--86
+[]\OT1/cmr/m/n/10.95 Figure 1: |Orig-i-nal
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 86--86
+\OT1/cmr/m/n/10.95 face im-age with-out
+ []
+
+<images/mySelfie50M100R.png, id=2, 692.5875pt x 721.94719pt>
+File: images/mySelfie50M100R.png Graphic file (type png)
+
+<use images/mySelfie50M100R.png>
+Package pdftex.def Info: images/mySelfie50M100R.png used on input line 89.
+(pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
+
+Underfull \hbox (badness 4739) in paragraph at lines 90--90
+\OT1/cmr/m/n/10.95 struc-tion with 50$%$
+ []
+
+<images/mySelfie90M100R.png, id=3, 692.5875pt x 721.94719pt>
+File: images/mySelfie90M100R.png Graphic file (type png)
+
+<use images/mySelfie90M100R.png>
+Package pdftex.def Info: images/mySelfie90M100R.png used on input line 93.
+(pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
+
+Underfull \hbox (badness 4739) in paragraph at lines 94--94
+\OT1/cmr/m/n/10.95 struc-tion with 90$%$
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images/mySelfieOriginal.png, id=15, 692.5875pt x 721.94719pt>
-File: images/mySelfieOriginal.png Graphic file (type png)
-
-<use images/mySelfieOriginal.png>
-Package pdftex.def Info: images/mySelfieOriginal.png used on input line 87.
-(pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
-
-Underfull \hbox (badness 3354) in paragraph at lines 88--88
-[]\OT1/cmr/m/n/10.95 Figure 1: |Orig-i-nal
- []
-
-
-Underfull \hbox (badness 5189) in paragraph at lines 88--88
-\OT1/cmr/m/n/10.95 face im-age with-out
- []
-
-<images/mySelfie50M100R.png, id=16, 692.5875pt x 721.94719pt>
-File: images/mySelfie50M100R.png Graphic file (type png)
-
-<use images/mySelfie50M100R.png>
-Package pdftex.def Info: images/mySelfie50M100R.png used on input line 91.
-(pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
-
-Underfull \hbox (badness 4739) in paragraph at lines 92--92
-\OT1/cmr/m/n/10.95 struc-tion with 50$%$
- []
-
-<images/mySelfie90M100R.png, id=17, 692.5875pt x 721.94719pt>
-File: images/mySelfie90M100R.png Graphic file (type png)
-
-<use images/mySelfie90M100R.png>
-Package pdftex.def Info: images/mySelfie90M100R.png used on input line 95.
-(pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
-
-Underfull \hbox (badness 4739) in paragraph at lines 96--96
-\OT1/cmr/m/n/10.95 struc-tion with 90$%$
- []
-
 <images/prefixrating.png, id=18, 300.12125pt x 124.465pt>
 File: images/prefixrating.png Graphic file (type png)
 
 <use images/prefixrating.png>
-Package pdftex.def Info: images/prefixrating.png used on input line 108.
+Package pdftex.def Info: images/prefixrating.png used on input line 106.
 (pdftex.def)             Requested size: 209.12683pt x 86.72987pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--110
-
- []
-
-[2 <./images/mySelfieOriginal.png (PNG copy)> <./images/mySelfie50M100R.png (PN
-G copy)> <./images/mySelfie90M100R.png (PNG copy)>]
-Overfull \hbox (20.58026pt too wide) in paragraph at lines 119--121
+ [2 <./images/mySelfieOriginal.png (PNG copy)> <./images/mySelfie50M100R.png (P
+NG copy)> <./images/mySelfie90M100R.png (PNG copy)> <./images/prefixrating.png>
+]
+Overfull \hbox (20.58026pt too wide) in paragraph at lines 117--119
 \OT1/cmr/m/n/10.95 user$[]$location$[]$country, user$[]$location$[]$region, use
 r$[]$location$[]$city, orig$[]$destination$[]$dista, user$[]$id,
  []
 
 
-Overfull \hbox (33.00838pt too wide) in paragraph at lines 119--121
+Overfull \hbox (33.00838pt too wide) in paragraph at lines 117--119
 \OT1/cmr/m/n/10.95 is$[]$mobile, is$[]$package, chan-nel, srch$[]$ci, srch$[]$c
 o, srch$[]$adults$[]$cnt, srch$[]$rm$[]$cnt, srch$[]$destination$[]$id,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--128
-
- []
-
-[3 <./images/prefixrating.png>] <images/m1CV1.jpg, id=29, 562.1pt x 421.575pt>
+[3] <images/m1CV1.jpg, id=29, 562.1pt x 421.575pt>
 File: images/m1CV1.jpg Graphic file (type jpg)
-
-<use images/m1CV1.jpg>
-Package pdftex.def Info: images/m1CV1.jpg used on input line 135.
+ <use images/m1CV1.jpg>
+Package pdftex.def Info: images/m1CV1.jpg used on input line 133.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
- <images/m1CV2.jpg, id=30, 562.1pt x 421.575pt>
+
+<images/m1CV2.jpg, id=30, 562.1pt x 421.575pt>
 File: images/m1CV2.jpg Graphic file (type jpg)
-
-<use images/m1CV2.jpg>
-Package pdftex.def Info: images/m1CV2.jpg used on input line 139.
+ <use images/m1CV2.jpg>
+Package pdftex.def Info: images/m1CV2.jpg used on input line 137.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
- <images/m1NoCV.jpg, id=31, 562.1pt x 421.575pt>
+
+<images/m1NoCV.jpg, id=31, 562.1pt x 421.575pt>
 File: images/m1NoCV.jpg Graphic file (type jpg)
-
-<use images/m1NoCV.jpg>
-Package pdftex.def Info: images/m1NoCV.jpg used on input line 143.
+ <use images/m1NoCV.jpg>
+Package pdftex.def Info: images/m1NoCV.jpg used on input line 141.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 134--147
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 132--145
 []$[]$ $[]$
  []
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
 File: images/m1CV1.jpg Graphic file (type jpg)
- <use images/m1CV1.jpg>
-Package pdftex.def Info: images/m1CV1.jpg used on input line 174.
+<use images/m1CV1.jpg>
+Package pdftex.def Info: images/m1CV1.jpg used on input line 173.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 File: images/m1CV2.jpg Graphic file (type jpg)
  <use images/m1CV2.jpg>
-Package pdftex.def Info: images/m1CV2.jpg used on input line 178.
+Package pdftex.def Info: images/m1CV2.jpg used on input line 177.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 File: images/m1NoCV.jpg Graphic file (type jpg)
  <use images/m1NoCV.jpg>
-Package pdftex.def Info: images/m1NoCV.jpg used on input line 182.
+Package pdftex.def Info: images/m1NoCV.jpg used on input line 181.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 173--186
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 172--185
 []$[]$ $[]$
  []
 
 [5 <./images/m1CV1.jpg> <./images/m1CV2.jpg> <./images/m1NoCV.jpg>] [6]
-[7] (./report.aux)
+[7] [8] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -816,11 +806,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4438 strings out of 494910
  65871 string characters out of 6179836
- 138648 words of memory out of 5000000
+ 141648 words of memory out of 5000000
  7654 multiletter control sequences out of 15000+600000
  11266 words of font info for 39 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 44i,10n,43p,699b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,43p,699b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -833,10 +823,10 @@ msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 s12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (7 pages, 2005812 bytes).
+Output written on report.pdf (8 pages, 2006806 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
