@@ -1,0 +1,117 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+\usepackage{hyperref}
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Study of Recommender Systems}
+\author{Ronghao Yang\\ID:20511820\\David R. Cheriton School of Computer Science\\University of Waterloo}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This project will focus on the the study of recommendation algorithms on specific recommendation problems. To have deeper insights of different algorithms, I am interested in testing their performance, applying them on specific datasets, and furthermore, having a comparison between them.
+\end{abstract}
+\section{Introduction}
+In 2006, Netflix held a $\$100,0000$ competition\cite{netPrize} to call for people to improve their movie recommender system. Not only is a good  recommender system important to Netflix, but also crucial in many real world applications such as book recommendation, hotel booking, event planning, etc. These algorithms usually involve player modelling, dimensionality reduction, and clustering, etc. Therefore, testing different recommendation algorithms' performances, analysing the capability of them, etc, become an interesting problem here.
+\section{Related work}
+For $The\;Netflix\;Prize$, in some of the winning papers\cite{bigc2009}\cite{bigc2008}\cite{bellkor2007}\cite{bellkor2008}. Algorithms like $K-NN$, collaborative filtering, regression, matrix factorization were tested on the given dataset, the winning method has achieved $RMSE = 0. 8712$.\\
+In another of the related works proposed in 2015, Yu and Riedl from Georgia Tech have shown that $NMF$(Non-negative matrix factorization) is successful in recommending personalized interactive narratives.
+\section{Proposed work}
+\subsection{Goal, challenges and plans}
+The overall goal here is try to achieve reasonably good results on the selected datasets and have an analysis of different recommendation algorithms and the results (including why the algorithms (not) work on (certain) datasets). \\ 
+This project will tackle one or two specific problems, apply different recommendation algorithms to them. The challenges may include algorithms performing poorly on the dataset, tuning the parameters of the algorithms, choosing the capable algorithms for specific problems.\\
+To achieve the goal, I will first do a literature survey about different recommendation algorithms, learn about their advantages and disadvantages. And then apply the chosen algorithms on the selected dataset. At the end, there will be an analysis of algorithms, datasets and results.
+
+%\begin{itemize}
+%  \item Analysing how well different algorithms recovers missing values in data matrix $V$, this can be crucial when using $NMF$ for recommender systems.
+ % \item Comparison between different modifications of $NMF$ algorithms on the same data set.
+ % \item Applying $NMF$ on 2-3 different datasets to analyse which kinds of datasets is $NMF$ suitable for, and which ones are not.
+%\end{itemize}
+
+ 
+\subsection{Datasets}
+Datasets will possibly be selected from \href{https://www.kaggle.com/}{Kaggle Competition} and \href{http://archive.ics.uci.edu/ml/index.php}{UCL Machine Learning Repository}, however, they have not been decided yet.\\
+One of the interesting datasets is the \href{http://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/index.html}{Last.fm Dataset} for music recommendation. 
+Another interesting datasets is \href{https://www.kaggle.com/c/expedia-hotel-recommendations}{Expedia dataset} for hotel recommendation.
+
+
+\begin{thebibliography}{9}
+\bibitem{netPrize} 
+Netflix Prize homepage, Website, 2006.
+\texttt{http://www.netflixprize.com}
+ 
+\bibitem{bigc2009} 
+Andreas Toscher, Michael Jahrer 
+\textit{The BigChaos Solution to the Netflix Grand Prize} 
+September 5, 2009
+
+\bibitem{bigc2008} 
+Andreas Toscher, Michael Jahrer 
+\textit{The BigChaos Solution to the Netflix Prize 2008} 
+
+\bibitem{bellkor2007} 
+Robert M. Bell, Yehuda Koren and Chris Volinsky\textit{The BellKor solution to the Netflix Prize}
+
+\bibitem{bellkor2008} 
+Robert M. Bell, Yehuda Koren and Chris Volinsky\textit{The BellKor 2008 Solution to the Netflix Prize}
+\bibitem{nmf1} 
+Hong Yu, Mark O. Riedl.
+\textit{Personalized Interactive Narratives via Sequential
+Recommendation of Plot Points}
+\end{thebibliography}
+
+\end{document}
