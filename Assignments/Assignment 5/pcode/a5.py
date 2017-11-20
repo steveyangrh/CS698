@@ -33,7 +33,6 @@ model.add( Conv2D( 512,(3,3),padding = 'same',activation='relu' ))
 model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2),strides=None))
 model.add(Dense(4096, activation='relu'))
 model.add(Dense(4096, activation='relu'))
-model.add(Dense(1000, activation='relu'))
 model.add(Flatten())
 
 model.add(Dense(10, activation='softmax'))
