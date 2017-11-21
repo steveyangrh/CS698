@@ -55,7 +55,7 @@
 
 %%% The "real" document content comes below...
 
-\title{User Modelling Using NMF for Expedia Hotel Recommendation}
+\title{Son of a bitch}
 \author{Ronghao Yang\\ID: 20511820\\University of Waterloo}
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -64,10 +64,12 @@
 \maketitle
 
 \begin{abstract}
+Player modelling methods are commonly seen in video games. Such methods are implemented to improve players' user experience. Other than being popular in video games, player modelling methods can also be used for recommender systems. Users are being modelled by such methods so that a corresponding item can be recommended to the user based on his/her user type.
 
 \end{abstract}
 \section{Introduction}
-Have you ever wondered, why can't you find the best music on Spotify? Or the most interesting book on Amazon? Or the finest hotel in the city of New York? In today's world, we want the service we get from the service providers (no matter online or offline) to be tailored to our interests, which means the services these days better to be personalized to amaze the customers. This is why recommendation systems are crucial in such business applications.
+Have you ever wondered, why can't you find the best music on Spotify? Or the most interesting book on Amazon? Or the finest hotel in the city of New York? In today's world, we want the service we get from the service providers (no matter online or offline) to be tailored to our interests, which means the services these days better to be personalized to amaze the customers. This is why recommendation systems are crucial in such business applications.\\
+For this project, I have implemented a player modelling algorithm called $NMF$ for a hotel recommendation problem. 
 \section{Non-negative Matrix Factorization (NMF)}
 \paragraph{• Introduction to NMF}\mbox{}\\
 $NMF$ is a matrix factorization algorithm which factorize a big matrix $V$($m$ by $n$) into two smaller matrices $W$($m$ by $r$) and $H$($r$ by $n$). \\
@@ -97,27 +99,27 @@ Here is an example of how $NMF$ works, the number of basis was set to be 100(whi
  
 
 \paragraph{• Related work}\mbox{}\\
-In 2014 Yu $\&$ Riedl from Georgia Tech have published a paper\cite{nmf1} about a recent success of $NMF$ for interactive narrative recommendation system. The research was to build a drama manager that learns a model of the player’s storytelling preferences and automatically recommends a narrative experience that is predicted to optimize the player’s experience while conforming to the human designer’s storytelling intentions \cite[p.~1]{nmf1}.\\
-In their research, a new method called $Prefix-Based\;Collaborative\;Filtering$ (PBCF) \cite[p.~2]{nmf1} has been introduced in which each prefix is a sequence of story plots. Based on $PBCF$, a prefix-rating matrix was constructed in which each row represents a prefix, each column represents a player, every entry in the matrix is the numerical rating rated by a player for a prefix. Similar to most recommendation problems, this matrix is sparse, due to the nature that it is impossible for a single player to encounter all the prefixes.\\
-$NMF$ was applied to this matrix to learn the player types
+In 2014, Yu $\&$ Riedl from Georgia Tech have published a paper\cite{nmf1} about a recent success of $NMF$ for interactive narrative recommendation system. The research was to build a drama manager that learns a model of the player’s storytelling preferences and automatically recommends a narrative experience that is predicted to optimize the player’s experience while conforming to the human designer’s storytelling intentions \cite[p.~1]{nmf1}.\\
+In their research, a new method called $Prefix-Based\;Collaborative\;Filtering$ (PBCF) \cite[p.~2]{nmf1} has been introduced in which each prefix is a sequence of story plots. Based on $PBCF$, a prefix-rating matrix was constructed in which each row represents a prefix, each column represents a player, every entry in the matrix is the numerical rating rated by a player for a prefix. Similar to most recommendation problems, this matrix is sparse, due to the nature that it is impossible for a single player to encounter all the prefixes.
 \begin{figure}[H]
 \caption{Prefix rating matrix $\cite[p.~4]{nmf1}$}
 \centering
 \includegraphics[width=0.5\textwidth]{prefixrating}
 \end{figure}
+$NMF$ was applied to this matrix to learn the player types so that the prefix that has the highest rating is recommended to the reader.
 
 \paragraph{• NMF algorithm}\mbox{}\\
-In $Algorithms\;for\;Non-negative\;Matrix\; Factorization$ published by Daniel F. Lee and H. Sebastian Seung, several $NMF$ algorithms have been introduced. One of which is\\
+In $Algorithms\;for\;Non-negative\;Matrix\; Factorization$ published by Daniel F. Lee and H. Sebastian Seung in 2001, several $NMF$ updating rules have been introduced. One of which is\\
 \centerline{$H_{\alpha\mu}$ = $H_{\alpha\mu}\frac{(W^{T}R)_{\alpha\mu}}{(W^{T}WH)_{\alpha\mu}}$, $W_{i\alpha}$ = $W_{i\alpha}\frac{(RH^{T})_{i\alpha}}{(WHH^{T})_{i\alpha}}$ \cite[p.~3]{nmfalg}}\\
-For predicting the new user 
+For predicting the new user, we use the algorithm introduced in 
 
 
 \section{Experiment}
 \subsection{Dataset}
 The dataset we use for experiment is the Expedia hotel recommendation dataset from Kaggle competition in 2016. This dataset contains the hotel booking information of more than 2,000,000 users, of which the training set is obtained from 2013 and 2014 user data and the test set is obtained from 2015 user data.\\
-In the data set, each column represent a user, each column contains the hotel booking information of the user. Such columns are date$\_$time. site$\_$name, posa$\_$continent, user$\_$location$\_$country, user$\_$location$\_$region, user$\_$location$\_$city, orig$\_$destination$\_$dista, user$\_$id, is$\_$mobile, is$\_$package, channel, srch$\_$ci, srch$\_$co, srch$\_$adults$\_$cnt, srch$\_$rm$\_$cnt, srch$\_$destination$\_$id, srch$\_$destination$\_$type$\_$id, hotel$\_$continent, hotel$\_$country, hotel$\_$market, is$\_$booking, cnt, and hotel$\_$cluster is what to be predicted. Moreover, for each hotel cluster, there are $149$ numerical latent descriptions.
-\subsection{Modification on dataset}
-Among all the columns, the date data is string data instead of numerical. The date in the testing set is one or two years later that the date in the training set, moreover, different user ids in this dataset may represent the same user. For the purpose of simplifying of the data set, I have removed the date coulumns. Then the user types will only be represented by numerical values.
+In the data set, each column represent a user, each column contains a feature of the user. All of the feature variable are non-negative numerical variable except for date variable. For the purpose of simplifying of the data set, I have removed the date columns. Then the user types will only be represented by numerical values.\\
+For privacy purpose, $Expedia$ has encoded some of the feature values, which makes the problem harder since the original values have changed. Moreover, there are many missing values in this dataset. 
+
 \subsection{User modeling and Feature selection}
 When using $NMF$ for building the user model, each basis user type is represented by the combination of different features. For example, assume we have $W$ as a user model which has 4 columns ($w_{1}, w_{2}, w_{3}, w_{4}$), $w_{1}$ represent users who love luxurious hotels, $w_{2}$ represent users who prefer cheaper hotels, $w_{3}$ represent users who want to live in downtown, $w_{4}$ represent users who dersire great hotel service. Then a new user maybe of 10\% of type 1, 30\% of type 2, 20\% of type 3 and 40\% of type 3.\\    
 For feature selection, in some cases, we may also be able to select the number of basis based on some prior or domain knowledge. However, in our case, no proven knowledge is available. $NMF$ is capable of selecting the number basis user type by running cross validations. The number of basis that generates the smallest cross validation error is selected.\\
@@ -203,31 +205,10 @@ k = 3  & AF    &AFG&   004&005&hello\\
 \end{tabular}
 }
 
-\paragraph{• Method 3}\mbox{}\\
-\centerline{
-\begin{tabular}[H]{ |p{1.5cm}||p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm} | }
- \hline
- \multicolumn{6}{|c|}{Results using method 1} \\
- \hline
-& m=2 &m=5&m=10&m=15&m=20\\
- \hline
-k = 1   & AF    &AFG&   004&005&hello\\
- \hline
-k = 3  & AF    &AFG&   004&005&hello\\
- \hline
- k = 5   & AF    &AFG&   004&005&hello\\
- \hline
- k = 7  & AF    &AFG&   004&005&hello\\
- \hline
- k = 9   & AF    &AFG&   004&005&hello\\
- \hline
-\end{tabular}
-}
-\subsection{Results}
 \subsection{Comparision with other algorithms}
 As in the papers and reports regarding the Expedia hotel recommendation competition, $NMF$ has never been implemented.
 \section{Extra Experiment}
-
+To have a deeper insight of $NMF$, I have also performed the algorithm on a different dataset.
 
 \section{Conclusion}
 

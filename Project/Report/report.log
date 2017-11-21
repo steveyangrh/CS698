@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.1)  19 NOV 2017 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 NOV 2017 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report.tex
 (./report.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,7 +23,7 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen103
 \WF@size=\dimen104
 \c@WF@wrappedlines=\count87
@@ -31,7 +31,7 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \WF@everypar=\toks14
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count88
 \float@exts=\toks15
@@ -39,20 +39,20 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box28
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -264,11 +264,17 @@ File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+01E02 (decimal 7682)
-   defining Unicode char U+01E03 (decimal 7683)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -280,12 +286,14 @@ File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -325,8 +333,8 @@ File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -349,22 +357,21 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -380,36 +387,36 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks20
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count92
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
+(/usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen115
 \lightrulewidth=\dimen116
 \cmidrulewidth=\dimen117
@@ -428,36 +435,36 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count96
 \@thisrulewidth=\dimen127
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen128
 \extrarowheight=\dimen129
 \NC@list=\toks21
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-(/usr/share/texlive/texmf-dist/tex/latex/paralist/paralist.sty
-Package: paralist 2015/12/30 v2.5 Extended list environments
+(/usr/local/texlive/2017/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip45
 \plpartopsep=\skip46
 \plitemsep=\skip47
 \plparsep=\skip48
 \pl@lab=\toks22
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks23
 \verbatim@line=\toks24
 \verbatim@in@stream=\read1
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen130
 \captionmargin@=\dimen131
@@ -485,7 +492,8 @@ Package caption Info: wrapfig package is loaded.
 \sf@top=\skip52
 \sf@bottom=\skip53
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \fancy@headwidth=\skip54
 \f@ncyO@elh=\skip55
 \f@ncyO@erh=\skip56
@@ -496,18 +504,18 @@ Package caption Info: wrapfig package is loaded.
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
 )
-(/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
 
 
 Package tocbibind Note: Using section or other style headings.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
 \cftparskip=\skip63
@@ -547,7 +555,8 @@ Package tocloft Info: The document has section divisions on input line 44.
 \cftbeforesubtabskip=\skip97
 \cftsubtabindent=\skip98
 \cftsubtabnumwidth=\skip99
-) (./report.aux
+)
+(./report.aux
 
 LaTeX Warning: Label ` m1cv1' multiply defined.
 
@@ -607,7 +616,7 @@ LaTeX Font Info:    ... okay on input line 63.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen138
@@ -620,12 +629,12 @@ LaTeX Font Info:    ... okay on input line 63.
 \MPnumerator=\count109
 \makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks26
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -633,34 +642,36 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
+(grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -673,30 +684,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 64.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 72.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 72.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 74.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 72.
+LaTeX Font Info:    No file OMScmss.fd. on input line 74.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 72.
+(Font)              for symbol `textbullet' on input line 74.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 73.
 <images/mySelfieOriginal.png, id=1, 692.5875pt x 721.94719pt>
 File: images/mySelfieOriginal.png Graphic file (type png)
 
 <use images/mySelfieOriginal.png>
-Package pdftex.def Info: images/mySelfieOriginal.png used on input line 85.
+Package pdftex.def Info: images/mySelfieOriginal.png used on input line 87.
 (pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
 
-Underfull \hbox (badness 3354) in paragraph at lines 86--86
+Underfull \hbox (badness 3354) in paragraph at lines 88--88
 []\OT1/cmr/m/n/10.95 Figure 1: |Orig-i-nal
  []
 
 
-Underfull \hbox (badness 5189) in paragraph at lines 86--86
+Underfull \hbox (badness 5189) in paragraph at lines 88--88
 \OT1/cmr/m/n/10.95 face im-age with-out
  []
 
@@ -704,10 +715,10 @@ Underfull \hbox (badness 5189) in paragraph at lines 86--86
 File: images/mySelfie50M100R.png Graphic file (type png)
 
 <use images/mySelfie50M100R.png>
-Package pdftex.def Info: images/mySelfie50M100R.png used on input line 89.
+Package pdftex.def Info: images/mySelfie50M100R.png used on input line 91.
 (pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
 
-Underfull \hbox (badness 4739) in paragraph at lines 90--90
+Underfull \hbox (badness 4739) in paragraph at lines 92--92
 \OT1/cmr/m/n/10.95 struc-tion with 50$%$
  []
 
@@ -715,87 +726,76 @@ Underfull \hbox (badness 4739) in paragraph at lines 90--90
 File: images/mySelfie90M100R.png Graphic file (type png)
 
 <use images/mySelfie90M100R.png>
-Package pdftex.def Info: images/mySelfie90M100R.png used on input line 93.
+Package pdftex.def Info: images/mySelfie90M100R.png used on input line 95.
 (pdftex.def)             Requested size: 104.56342pt x 108.99242pt.
 
-Underfull \hbox (badness 4739) in paragraph at lines 94--94
+Underfull \hbox (badness 4739) in paragraph at lines 96--96
 \OT1/cmr/m/n/10.95 struc-tion with 90$%$
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 <images/prefixrating.png, id=18, 300.12125pt x 124.465pt>
 File: images/prefixrating.png Graphic file (type png)
 
 <use images/prefixrating.png>
-Package pdftex.def Info: images/prefixrating.png used on input line 106.
+Package pdftex.def Info: images/prefixrating.png used on input line 107.
 (pdftex.def)             Requested size: 209.12683pt x 86.72987pt.
  [2 <./images/mySelfieOriginal.png (PNG copy)> <./images/mySelfie50M100R.png (P
-NG copy)> <./images/mySelfie90M100R.png (PNG copy)> <./images/prefixrating.png>
-]
-Overfull \hbox (20.58026pt too wide) in paragraph at lines 117--119
-\OT1/cmr/m/n/10.95 user$[]$location$[]$country, user$[]$location$[]$region, use
-r$[]$location$[]$city, orig$[]$destination$[]$dista, user$[]$id,
- []
-
-
-Overfull \hbox (33.00838pt too wide) in paragraph at lines 117--119
-\OT1/cmr/m/n/10.95 is$[]$mobile, is$[]$package, chan-nel, srch$[]$ci, srch$[]$c
-o, srch$[]$adults$[]$cnt, srch$[]$rm$[]$cnt, srch$[]$destination$[]$id,
- []
-
-[3] <images/m1CV1.jpg, id=29, 562.1pt x 421.575pt>
+NG copy)> <./images/mySelfie90M100R.png (PNG copy)>] [3 <./images/prefixrating.
+png>]
+<images/m1CV1.jpg, id=29, 562.1pt x 421.575pt>
 File: images/m1CV1.jpg Graphic file (type jpg)
  <use images/m1CV1.jpg>
-Package pdftex.def Info: images/m1CV1.jpg used on input line 133.
+Package pdftex.def Info: images/m1CV1.jpg used on input line 135.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 
 <images/m1CV2.jpg, id=30, 562.1pt x 421.575pt>
 File: images/m1CV2.jpg Graphic file (type jpg)
  <use images/m1CV2.jpg>
-Package pdftex.def Info: images/m1CV2.jpg used on input line 137.
+Package pdftex.def Info: images/m1CV2.jpg used on input line 139.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 
 <images/m1NoCV.jpg, id=31, 562.1pt x 421.575pt>
 File: images/m1NoCV.jpg Graphic file (type jpg)
  <use images/m1NoCV.jpg>
-Package pdftex.def Info: images/m1NoCV.jpg used on input line 141.
+Package pdftex.def Info: images/m1NoCV.jpg used on input line 143.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 132--145
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 134--147
 []$[]$ $[]$
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 File: images/m1CV1.jpg Graphic file (type jpg)
 <use images/m1CV1.jpg>
-Package pdftex.def Info: images/m1CV1.jpg used on input line 173.
+Package pdftex.def Info: images/m1CV1.jpg used on input line 175.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 File: images/m1CV2.jpg Graphic file (type jpg)
  <use images/m1CV2.jpg>
-Package pdftex.def Info: images/m1CV2.jpg used on input line 177.
+Package pdftex.def Info: images/m1CV2.jpg used on input line 179.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 File: images/m1NoCV.jpg Graphic file (type jpg)
  <use images/m1NoCV.jpg>
-Package pdftex.def Info: images/m1NoCV.jpg used on input line 181.
+Package pdftex.def Info: images/m1NoCV.jpg used on input line 183.
 (pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 172--185
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 174--187
 []$[]$ $[]$
  []
 
 [5 <./images/m1CV1.jpg> <./images/m1CV2.jpg> <./images/m1NoCV.jpg>] [6]
-[7] [8] (./report.aux)
+[7] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -804,29 +804,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4438 strings out of 494910
- 65871 string characters out of 6179836
- 141648 words of memory out of 5000000
- 7654 multiletter control sequences out of 15000+600000
+ 4458 strings out of 492995
+ 66711 string characters out of 6132704
+ 145116 words of memory out of 5000000
+ 7933 multiletter control sequences out of 15000+600000
  11266 words of font info for 39 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 44i,11n,43p,699b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-s12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (8 pages, 2006806 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 44i,11n,43p,560b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (7 pages, 2002891 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
