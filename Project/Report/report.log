@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 NOV 2017 00:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 NOV 2017 01:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,17 +556,7 @@ Package tocloft Info: The document has section divisions on input line 44.
 \cftsubtabindent=\skip98
 \cftsubtabnumwidth=\skip99
 )
-(./report.aux
-
-LaTeX Warning: Label ` m1cv1' multiply defined.
-
-
-LaTeX Warning: Label ` m1cv2' multiply defined.
-
-
-LaTeX Warning: Label ` m1nocv' multiply defined.
-
-)
+(./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -772,41 +762,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
-
- []
-
-File: images/m1CV1.jpg Graphic file (type jpg)
-<use images/m1CV1.jpg>
-Package pdftex.def Info: images/m1CV1.jpg used on input line 175.
-(pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
-File: images/m1CV2.jpg Graphic file (type jpg)
- <use images/m1CV2.jpg>
-Package pdftex.def Info: images/m1CV2.jpg used on input line 179.
-(pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
-File: images/m1NoCV.jpg Graphic file (type jpg)
- <use images/m1NoCV.jpg>
-Package pdftex.def Info: images/m1NoCV.jpg used on input line 183.
-(pdftex.def)             Requested size: 209.12683pt x 156.84229pt.
-
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 174--187
-[]$[]$ $[]$
- []
-
 [5 <./images/m1CV1.jpg> <./images/m1CV2.jpg> <./images/m1NoCV.jpg>] [6]
-[7] (./report.aux)
+(./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  4458 strings out of 492995
  66711 string characters out of 6132704
- 145116 words of memory out of 5000000
+ 143077 words of memory out of 5000000
  7933 multiletter control sequences out of 15000+600000
  11266 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -824,10 +789,10 @@ xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (7 pages, 2002891 bytes).
+Output written on report.pdf (6 pages, 2002299 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
