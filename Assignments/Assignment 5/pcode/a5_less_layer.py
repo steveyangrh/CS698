@@ -50,8 +50,7 @@ y_train = y_train[0:6000]
 
 
 input_shape = 32
-batchsize = 512
-learning_rate = 0.005
+batchsize = 32
 
 
 model = Sequential()
@@ -72,11 +71,11 @@ model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2),strides=None))
 
 model.add(Flatten())
 
-model.add(Dense(4096, activation='relu'))
-model.add(Dense(4096, activation='relu'))
+model.add(Dense(512, activation='relu'))
+model.add(Dense(512, activation='relu'))
 
 model.add(Dense(10, activation='softmax'))
-sgd = SGD(lr=learning_rate, decay=1e-6, momentum=0.9, nesterov=True)
+sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd,metrics = ['accuracy'])
 model.fit(x_train, y_train, batch_size=batchsize, epochs=10)
 score = model.evaluate(x_test, y_test, verbose = 0)
