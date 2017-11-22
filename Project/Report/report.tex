@@ -118,7 +118,7 @@ For predicting the new user, we use the algorithm introduced in
 \subsection{Dataset}
 The dataset we use for experiment is the Expedia hotel recommendation dataset from Kaggle competition in 2016. This dataset contains the hotel booking information of more than 2,000,000 users, of which the training set is obtained from 2013 and 2014 user data and the test set is obtained from 2015 user data.\\
 In the data set, each column represent a user, each column contains a feature of the user. All of the feature variable are non-negative numerical variable except for date variable. For the purpose of simplifying of the data set, I have removed the date columns. Then the user types will only be represented by numerical values.\\
-For privacy purpose, $Expedia$ has encoded some of the feature values, which makes the problem harder since the original values have changed. Moreover, there are many missing values in this dataset. 
+For privacy purpose, $Expedia$ has encoded some of the feature values, which makes the problem harder since the original values have changed. Moreover, some of the features contain missing values. This might also create some challenge to the problem.
 
 \subsection{User modeling and Feature selection}
 When using $NMF$ for building the user model, each basis user type is represented by the combination of different features. For example, assume we have $W$ as a user model which has 4 columns ($w_{1}, w_{2}, w_{3}, w_{4}$), $w_{1}$ represent users who love luxurious hotels, $w_{2}$ represent users who prefer cheaper hotels, $w_{3}$ represent users who want to live in downtown, $w_{4}$ represent users who dersire great hotel service. Then a new user maybe of 10\% of type 1, 30\% of type 2, 20\% of type 3 and 40\% of type 3.\\    
@@ -126,9 +126,9 @@ For feature selection, in some cases, we may also be able to select the number o
 When running cross validation, $10-fold$ cross validation is selected. The loss metric is set to the rmse value between two matrices.\\
 \centerline{$rmse_{A,B}$ = $\sqrt{avg_{ij}((A_{ij}-B_{ij})^{2})}$}
 
-\paragraph{• Method 1}\mbox{}\\
-For method 1, $KNN$ has been implemented as a complementary algorithm to $NMF$ for predicting the hotel clusters. In this method, we build the user model only using the general information of Expedia users without the latent description of search regions. Each user type is simply defined by user actions and other information in the training set, such as search location, is mobile, etc.\\
-In the beginning of the training process, we apply $NMF$ on the training set to compute the user model $W$. Then we apply the computed model $W$ on the testing set to compute the coefficients($H$) of the testing users. Once we have the coefficients of a testing user, we go back to the training set and use $KNN$ to find what hotel cluster users that have the similar coefficients choose, then we use that hotel cluster as a prediction for the unknown user.
+\paragraph{• Algorithm}\mbox{}\\
+For this method, $KNN$ has been implemented as a complementary algorithm to $NMF$ for predicting the hotel clusters. We build the user model only using the general information of Expedia users without the latent description of search regions. Each user type is simply defined by the numerical features in the training set, such as search location, etc.\\
+In the beginning of the training process, we apply $NMF$ on the training set to compute the user model $W$. Then we apply the computed model $W$ on the testing set to obtain the coefficients ($H$) of the testing users. Once we have the coefficients of a testing users, we know what types of users they are. Then we go back to the training set and use $KNN$ to find what hotel cluster users that have the similar coefficients choose, then we use that hotel cluster as a prediction for the unknown users.
 
 \begin{figure}[H] 
   \begin{minipage}[H]{0.5\linewidth}\label{ m1cv1} 
@@ -166,57 +166,20 @@ k = 3  & 1.11\%    &1.17\%&   1.25\%&1.20\%&1.22\%\\
  \hline
 \end{tabular}
 }\mbox{}\\
-
-\paragraph{• Method 2}\mbox{}\\
-For method 2, $KNN$ has also been implemented as a complementary algorithm to $NMF$ for predicting the hotel clusters. However, the exact method is different. In this method, the latent description of search regions has been used when building the user model. Compared to method 1, now each basis user type is also described by the latent variables.\\
-In the beginning of the training process, we apply $NMF$ on the training set to compute the user model $W$. Then we use the computed model $W$ to computed the associated latent hotel descriptions of the user's potential hotel cluster. At the end, we apply $KNN$ algorithm on the computed latent hotel descriptions to compute the actual hotel cluster.
-\begin{figure}[H] 
-  \begin{minipage}[H]{0.5\linewidth}\label{ m1cv1} 
-    \includegraphics[width=1\linewidth]{m1CV1.jpg} 
-    \caption{Cross validation with number of basis 5, 10, 15, .., 50} 
-  \end{minipage} 
-  \begin{minipage}[H]{0.5\linewidth}\label{ m1cv2} 
-    \includegraphics[width=1\linewidth]{m1CV2.jpg} 
-    \caption{Cross validation with number of basis 1, 2, 3, ...9} 
-  \end{minipage} 
-  \begin{minipage}[H]{0.5\linewidth}\label{ m1nocv} 
-    \includegraphics[width=1\linewidth]{m1NoCV.jpg} 
-    \caption{Testing basis without using cross validation} 
-  \end{minipage}
-  \hfill
-\end{figure}
-\centerline{
-\begin{tabular}[H]{ |p{1.5cm}||p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm} | }
- \hline
- \multicolumn{6}{|c|}{Results using method 1} \\
- \hline
-& m=2 &m=5&m=10&m=15&m=20\\
- \hline
-k = 1   & AF    &AFG&   004&005&hello\\
- \hline
-k = 3  & AF    &AFG&   004&005&hello\\
- \hline
- k = 5   & AF    &AFG&   004&005&hello\\
- \hline
- k = 7  & AF    &AFG&   004&005&hello\\
- \hline
- k = 9   & AF    &AFG&   004&005&hello\\
- \hline
-\end{tabular}
-}
+As we can see, the results
 
 \subsection{Comparision with other algorithms}
-As in the papers and reports regarding the Expedia hotel recommendation competition, $NMF$ has never been implemented.
+
 \section{Extra Experiment}
 To have a deeper insight of $NMF$, I have also performed the algorithm on a different dataset.
 
 \section{Conclusion}
-
+As in the papers and reports regarding the Expedia hotel recommendation competition, $NMF$ has never been implemented.
 
 \section{Discussion}
-
+As we have stated earlier in the introduction to NMF section, one of the most important assumptions of $NMF$ is linearity in the dataset, which assumes that a user can be represented as a linear combination of basis user types.
 \section{Note}
-All the algorithms used for this project, including $NMF$, $KNN$ have been implemented by myself, no libraries have been used. Source code is available upon request.
+All the algorithms used for this project, including $NMF$, $KNN$ have been written by myself, no libraries have been used. Source code is available upon request.
 \section{Acknowledgement}
 I greatly acknowledge Dr.Yaoliang Yu for the amazing knowledge he shared with us and his support through out the term.
 
@@ -234,10 +197,10 @@ Daniel D. Lee and Seung, H. Sebastian.
 Advances in Neural Information Processing Systems 13, 556--562, 2001
 
 \bibitem{expedia} 
-Daniel D. Lee and Seung, H. Sebastian.
-\textit{Algorithms for Non-negative Matrix Factorization}
-Advances in Neural Information Processing Systems 13, 556--562, 2001
-
+Kaggle- Expedia Hotel Recommendations, 
+\textit{https://www.kaggle.
+com/c/expedia-hotel-recommendations}
+Accessed: 2017-10-30.
 \end{thebibliography}
 
 \end{document}
