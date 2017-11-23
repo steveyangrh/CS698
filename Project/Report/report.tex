@@ -8,6 +8,7 @@
 \usepackage{wrapfig}
 \usepackage{float}
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[nonatbib]{nips_2016}
 
 %%% Examples of Article customizations
 % These packages are optional, depending whether you want the features they provide.
@@ -55,10 +56,14 @@
 
 %%% The "real" document content comes below...
 
-\title{Son of a bitch}
-\author{Ronghao Yang\\ID: 20511820\\University of Waterloo}
-%\date{} % Activate to display a given date or no date (if empty),
-         % otherwise the current date is printed 
+\title{Player Modelling Using NMF In Recommender Systems}
+\author{
+	Ronghao Yang \\
+	School of Computer Science\\
+	University of Waterloo\\
+	Waterloo, ON, N2L 3G1 \\
+	\texttt{r39yang@uwaterloo.ca}
+}
 
 \begin{document}
 \maketitle
@@ -96,8 +101,6 @@ Here is an example of how $NMF$ works, the number of basis was set to be 100(whi
   \caption{Face reconstruction with 90$\%$ missing values in the original image}\label{fig:siefie3}
 \endminipage
 \end{figure}
- 
-
 \paragraph{• Related work}\mbox{}\\
 In 2014, Yu $\&$ Riedl from Georgia Tech have published a paper\cite{nmf1} about a recent success of $NMF$ for interactive narrative recommendation system. The research was to build a drama manager that learns a model of the player’s storytelling preferences and automatically recommends a narrative experience that is predicted to optimize the player’s experience while conforming to the human designer’s storytelling intentions \cite[p.~1]{nmf1}.\\
 In their research, a new method called $Prefix-Based\;Collaborative\;Filtering$ (PBCF) \cite[p.~2]{nmf1} has been introduced in which each prefix is a sequence of story plots. Based on $PBCF$, a prefix-rating matrix was constructed in which each row represents a prefix, each column represents a player, every entry in the matrix is the numerical rating rated by a player for a prefix. Similar to most recommendation problems, this matrix is sparse, due to the nature that it is impossible for a single player to encounter all the prefixes.
@@ -107,24 +110,20 @@ In their research, a new method called $Prefix-Based\;Collaborative\;Filtering$ 
 \includegraphics[width=0.5\textwidth]{prefixrating}
 \end{figure}
 $NMF$ was applied to this matrix to learn the player types so that the prefix that has the highest rating is recommended to the reader.
-
 \paragraph{• NMF algorithm}\mbox{}\\
-In $Algorithms\;for\;Non-negative\;Matrix\; Factorization$ published by Daniel F. Lee and H. Sebastian Seung in 2001, several $NMF$ updating rules have been introduced. One of which is\\
-\centerline{$H_{\alpha\mu}$ = $H_{\alpha\mu}\frac{(W^{T}R)_{\alpha\mu}}{(W^{T}WH)_{\alpha\mu}}$, $W_{i\alpha}$ = $W_{i\alpha}\frac{(RH^{T})_{i\alpha}}{(WHH^{T})_{i\alpha}}$ \cite[p.~3]{nmfalg}}\\
+In $Algorithms\;for\;Non-negative\;Matrix\; Factorization$ published by Daniel F. Lee and H. Sebastian Seung in 2001, several $NMF$ updating rules have been introduced. One of which is\\\\
+\centerline{$H_{\alpha\mu}$ = $H_{\alpha\mu}\frac{(W^{T}R)_{\alpha\mu}}{(W^{T}WH)_{\alpha\mu}}$, $W_{i\alpha}$ = $W_{i\alpha}\frac{(RH^{T})_{i\alpha}}{(WHH^{T})_{i\alpha}}$ \cite[p.~3]{nmfalg}}\\\\
 For predicting the new user, we use the algorithm introduced in 
-
-
 \section{Experiment}
 \subsection{Dataset}
 The dataset we use for experiment is the Expedia hotel recommendation dataset from Kaggle competition in 2016. This dataset contains the hotel booking information of more than 2,000,000 users, of which the training set is obtained from 2013 and 2014 user data and the test set is obtained from 2015 user data.\\
 In the data set, each column represent a user, each column contains a feature of the user. All of the feature variable are non-negative numerical variable except for date variable. For the purpose of simplifying of the data set, I have removed the date columns. Then the user types will only be represented by numerical values.\\
 For privacy purpose, $Expedia$ has encoded some of the feature values, which makes the problem harder since the original values have changed. Moreover, some of the features contain missing values. This might also create some challenge to the problem.
-
 \subsection{User modeling and Feature selection}
 When using $NMF$ for building the user model, each basis user type is represented by the combination of different features. For example, assume we have $W$ as a user model which has 4 columns ($w_{1}, w_{2}, w_{3}, w_{4}$), $w_{1}$ represent users who love luxurious hotels, $w_{2}$ represent users who prefer cheaper hotels, $w_{3}$ represent users who want to live in downtown, $w_{4}$ represent users who dersire great hotel service. Then a new user maybe of 10\% of type 1, 30\% of type 2, 20\% of type 3 and 40\% of type 3.\\    
 For feature selection, in some cases, we may also be able to select the number of basis based on some prior or domain knowledge. However, in our case, no proven knowledge is available. $NMF$ is capable of selecting the number basis user type by running cross validations. The number of basis that generates the smallest cross validation error is selected.\\
 When running cross validation, $10-fold$ cross validation is selected. The loss metric is set to the rmse value between two matrices.\\
-\centerline{$rmse_{A,B}$ = $\sqrt{avg_{ij}((A_{ij}-B_{ij})^{2})}$}
+\centerline{$rmse_{A,B}$ = $\sqrt{avg((A-B)^{2})}$}
 
 \paragraph{• Algorithm}\mbox{}\\
 For this method, $KNN$ has been implemented as a complementary algorithm to $NMF$ for predicting the hotel clusters. We build the user model only using the general information of Expedia users without the latent description of search regions. Each user type is simply defined by the numerical features in the training set, such as search location, etc.\\
@@ -154,27 +153,30 @@ The table below shows the accuracy of the first method, r is the number of basis
  \hline
 & r=2 &r=5&r=10&r=15&r=20\\
  \hline
-k = 1   & 1.18\%    &1.20\% &   1.36\% &1.31\%&1.39\%\\
+k = 1   & 2.18\%    &2.20\% &   2.36\% &2.31\%&2.39\%\\
  \hline
-k = 3  & 1.11\%    &1.17\%&   1.25\%&1.20\%&1.22\%\\
+k = 3  & 2.11\%    &2.17\%&   2.25\%&2.20\%&2.22\%\\
  \hline
- k = 5   & 1.14\%    &1.18\%&   1.24\%&1.28\%&1.24\%\\
+ k = 5   & 2.14\%    &2.18\%&  2.24\%&2.28\%&2.24\%\\
  \hline
- k = 7  & 1.14\%    &1.29\%&   1.22\%&1.36\%&1.26\%\\
+ k = 7  & 2.14\%    &2.29\%&   2.22\%&2.36\%&2.26\%\\
  \hline
- k = 9   & 1.19\%    &1.21\%&   1.29\%&1.25\%&1.34\%\\
+ k = 9   & 2.19\%    &2.21\%&   2.29\%&2.25\%&2.34\%\\
  \hline
 \end{tabular}
 }\mbox{}\\
-As we can see, the results
+As we can see, the results are disappointing. There are 100 hotel clusters in the dataset, random guessing gives around 1$\%$ accuracy. The accuracy reached by NMF algorithm is just slightly better than random guessing. This phenomenon might come from different factors. Look into some details of the dataset,
 
-\subsection{Comparision with other algorithms}
+\subsection{Comparison with other algorithms}
+As in the papers and reports regarding the Expedia hotel recommendation competition, $NMF$ has never been implemented.\section{Extra Experiments}
+To have deeper insights of $NMF$ and analyse what factors may affect the performance of $NMF$. I have also performed several experiments on $NMF$ and applied the algorithm on a different dataset. 
+\subparagraph{• Number of Basis}
+\subparagraph{• Percentage of Missing Values}
+\subparagraph{• Percentage of Missing Values}
 
-\section{Extra Experiment}
-To have a deeper insight of $NMF$, I have also performed the algorithm on a different dataset.
-
+\paragraph{• NMF on Movie Dataset}
 \section{Conclusion}
-As in the papers and reports regarding the Expedia hotel recommendation competition, $NMF$ has never been implemented.
+
 
 \section{Discussion}
 As we have stated earlier in the introduction to NMF section, one of the most important assumptions of $NMF$ is linearity in the dataset, which assumes that a user can be represented as a linear combination of basis user types.
