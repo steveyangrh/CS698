@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[nonatbib]{nips_2016}
+
+\usepackage[breaklinks=true,letterpaper=true,colorlinks,citecolor=black,bookmarks=false]{hyperref}
+
+\usepackage{amsthm}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\usepackage[sort&compress,numbers]{natbib}
+\usepackage[normalem]{ulem}
+
+% use Times
+\usepackage{times}
+% For figures
+\usepackage{graphicx} % more modern
+\graphicspath{ {images/} }
+
+%\usepackage{epsfig} % less modern
+%\usepackage{subfig} 
+
+\graphicspath{{../fig/}}
+
+\usepackage{tikz}
+\usepackage{tkz-tab}
+\usepackage{caption} 
+\usepackage{subcaption} 
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{arrow} = [very thick,->,>=stealth]
+
+\usepackage{cleveref}
+\usepackage{setspace}
+\usepackage{wrapfig}
+%\usepackage[ruled]{algorithm}
+\usepackage{algpseudocode}
+\usepackage[noend,linesnumbered]{algorithm2e}
+
+\usepackage[disable]{todonotes}
+
+
+\title{Replace with your title}
+
+\author{
+	Ronghao Yang \\
+	School of Computer Science\\
+	University of Waterloo\\
+	Waterloo, ON, N2L 3G1 \\
+	\texttt{r39yang@uwaterloo.ca}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Player modelling methods are commonly seen in video games. Such methods are implemented to improve players' user experience. Other than being popular in video games, player modelling methods can also be used for recommender systems. Users are being modelled by such methods so that a corresponding item can be recommended to the user based on his/her user type.
+
+\end{abstract}
+
+\section{Introduction}
+Have you ever wondered, why can't you find the best music on Spotify? Or the most interesting book on Amazon? Or the finest hotel in the city of New York? In today's world, we want the service we get from the service providers (no matter online or offline) to be tailored to our interests, which means the services these days better to be personalized to amaze the customers. This is why recommendation systems are crucial in such business applications.\\
+For this project, I have implemented a player modelling algorithm called $NMF$ for a hotel recommendation problem. 
+\section{Non-negative Matrix Factorization (NMF)}
+\paragraph{• Introduction to NMF}\mbox{}\\
+$NMF$ is a matrix factorization algorithm which factorize a big matrix $V$($m$ by $n$) into two smaller matrices $W$($m$ by $r$) and $H$($r$ by $n$). \\
+\centerline{$V$ $\approx$ $W$ $\times$ $H$}\\
+For each column $v_{i}$ in $V$, we have\\
+\centerline{$v_{i}$ $\approx$ $W$ $\times$ $h_{i}$}\\
+where $h_{i}$ is the corresponding column in $H$, in other words, every column in $V$ is a linear combination of $W$ where $H$ is the coefficient matrix. Geometrically, $NMF$ projects the data points in higher dimensional space to the lower dimensional space formed by the basis vectors in $W$, and $H$ contains the projected coefficients.\\
+To integrate the theory with the context, matrices are commonly seen in recommendation problems, with columns and rows being users and the corresponding items. When $NMF$ factorizes such a matrix into $W$ and $H$, the columns in $W$ contains the hidden features of the original matrix. Each basis vector in $W$ can be viewed as basic user type, every user therefore is represented as a linear combination of such basic user typrs which are .\\
+\centerline{$u$ = $a_1w_1+a_2w_2+....+a_rw_r$}
+where $u$ is a single user and $a_is$ are the coefficients.
+Besides, such user-item matrices are usually sparse (with high percentage of missing values), $NMF$ with EM algorithm can reconstruct the original matrix by filling out the missing values.\\
+Here is an example of how $NMF$ works, the number of basis was set to be 100(which might not be optimal in this case):
+
+
+\section*{Acknowledgement}
+Thank people who have helped or influenced you in this project.
+
+\nocite{*}
+
+\bibliographystyle{unsrtnat}
+\bibliography{project}
+
+\end{document}
