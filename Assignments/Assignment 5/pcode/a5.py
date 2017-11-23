@@ -21,12 +21,16 @@ print(x_train.shape)
 
 y_train = keras.utils.to_categorical(y_train,10)
 y_test = keras.utils.to_categorical(y_test, 10)
+x_train = x_train.astype('float32')
+x_test = x_test.astype('float32')
 
 print(x_test.shape)
 
-X_train = np.zeros([6000,32,32,1])
+train_size = 60000
 
-for i in range(6000):
+X_train = np.zeros([train_size,32,32,1])
+
+for i in range(train_size):
 	im = Image.fromarray(x_train[i].reshape([28,28]))
 	im = im.resize([32,32])
 	im = np.array(im)
@@ -46,29 +50,29 @@ x_test = X_test
 
 x_train = x_train/255;
 x_test = x_test/255;
-y_train = y_train[0:6000]
+y_train = y_train[0:train_size]
 
 
 input_shape = 32
-batchsize = 512
+batchsize = 128
 learning_rate = 0.005
 
 
 model = Sequential()
 #create a sequential model
 model.add( Conv2D( 64,(3,3),padding = 'same',activation='relu',input_shape=(input_shape,input_shape,1)))
-model.add(MaxPooling2D(padding = 'same',pool_size=(2,2),strides=None))
+model.add(MaxPooling2D(padding = 'same',pool_size=(2,2)))
 model.add( Conv2D( 128,(3,3),padding = 'same',activation='relu'))
 model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2)))
 model.add( Conv2D( 256,(3,3),padding = 'same',activation='relu'))
 model.add( Conv2D( 256,(3,3),activation='relu'))
-model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2),strides=None))
+model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2)))
 model.add( Conv2D( 512,(3,3),padding = 'same',activation='relu'))
 model.add( Conv2D( 512,(3,3),padding = 'same',activation='relu'))
-model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2),strides=None))
+model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2)))
 model.add( Conv2D( 512,(3,3),padding = 'same',activation='relu' ))
 model.add( Conv2D( 512,(3,3),padding = 'same',activation='relu' ))
-model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2),strides=None))
+model.add(MaxPooling2D(padding = 'same',pool_size=(2, 2)))
 
 model.add(Flatten())
 
@@ -76,7 +80,7 @@ model.add(Dense(4096, activation='relu'))
 model.add(Dense(4096, activation='relu'))
 
 model.add(Dense(10, activation='softmax'))
-sgd = SGD(lr=learning_rate, decay=1e-6, momentum=0.9, nesterov=True)
+sgd = SGD(decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd,metrics = ['accuracy'])
 model.fit(x_train, y_train, batch_size=batchsize, epochs=10)
 score = model.evaluate(x_test, y_test, verbose = 0)
