@@ -41,6 +41,9 @@
 \lfoot{}\cfoot{\thepage}\rfoot{}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
+\usepackage[]{algorithm2e}
+\SetKwInOut{Parameter}{parameter}
+
 %%% SECTION TITLE APPEARANCE
 \usepackage{sectsty}
 \allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
@@ -113,21 +116,65 @@ $NMF$ was applied to this matrix to learn the player types so that the prefix th
 \paragraph{• NMF algorithm}\mbox{}\\
 In $Algorithms\;for\;Non-negative\;Matrix\; Factorization$ published by Daniel F. Lee and H. Sebastian Seung in 2001, several $NMF$ updating rules have been introduced. One of which is\\\\
 \centerline{$H_{\alpha\mu}$ = $H_{\alpha\mu}\frac{(W^{T}R)_{\alpha\mu}}{(W^{T}WH)_{\alpha\mu}}$, $W_{i\alpha}$ = $W_{i\alpha}\frac{(RH^{T})_{i\alpha}}{(WHH^{T})_{i\alpha}}$ \cite[p.~3]{nmfalg}}\\\\
-For predicting the new user, we use the algorithm introduced in 
+
+
+
 \section{Experiment}
 \subsection{Dataset}
 The dataset we use for experiment is the Expedia hotel recommendation dataset from Kaggle competition in 2016. This dataset contains the hotel booking information of more than 2,000,000 users, of which the training set is obtained from 2013 and 2014 user data and the test set is obtained from 2015 user data.\\
 In the data set, each column represent a user, each column contains a feature of the user. All of the feature variable are non-negative numerical variable except for date variable. For the purpose of simplifying of the data set, I have removed the date columns. Then the user types will only be represented by numerical values.\\
 For privacy purpose, $Expedia$ has encoded some of the feature values, which makes the problem harder since the original values have changed. Moreover, some of the features contain missing values. This might also create some challenge to the problem.
-\subsection{User modeling and Feature selection}
+\subsection{User modelling and Feature selection}
 When using $NMF$ for building the user model, each basis user type is represented by the combination of different features. For example, assume we have $W$ as a user model which has 4 columns ($w_{1}, w_{2}, w_{3}, w_{4}$), $w_{1}$ represent users who love luxurious hotels, $w_{2}$ represent users who prefer cheaper hotels, $w_{3}$ represent users who want to live in downtown, $w_{4}$ represent users who dersire great hotel service. Then a new user maybe of 10\% of type 1, 30\% of type 2, 20\% of type 3 and 40\% of type 3.\\    
 For feature selection, in some cases, we may also be able to select the number of basis based on some prior or domain knowledge. However, in our case, no proven knowledge is available. $NMF$ is capable of selecting the number basis user type by running cross validations. The number of basis that generates the smallest cross validation error is selected.\\
 When running cross validation, $10-fold$ cross validation is selected. The loss metric is set to the rmse value between two matrices.\\
 \centerline{$rmse_{A,B}$ = $\sqrt{avg((A-B)^{2})}$}
-
 \paragraph{• Algorithm}\mbox{}\\
-For this method, $KNN$ has been implemented as a complementary algorithm to $NMF$ for predicting the hotel clusters. We build the user model only using the general information of Expedia users without the latent description of search regions. Each user type is simply defined by the numerical features in the training set, such as search location, etc.\\
-In the beginning of the training process, we apply $NMF$ on the training set to compute the user model $W$. Then we apply the computed model $W$ on the testing set to obtain the coefficients ($H$) of the testing users. Once we have the coefficients of a testing users, we know what types of users they are. Then we go back to the training set and use $KNN$ to find what hotel cluster users that have the similar coefficients choose, then we use that hotel cluster as a prediction for the unknown users.
+For this project, $KNN$ has been implemented as a complementary algorithm to $NMF$ for predicting the hotel clusters. Each user type is simply defined by the numerical features in the training set, such as search location, etc.\\
+In the beginning of the training process, we apply $NMF$ on the training set to compute the user model $W_{train}$ and the user coefficients of the training set$H_{train}$ . Then we apply the computed model $W_{train}$ on the testing set to obtain the coefficients ($H_{test}$) of the testing users. Once we have the coefficients of a testing users, we know what types of users they are. Then we go back to the training set and use $KNN$ to find what hotel cluster users that have the similar coefficients choose, then we use that hotel cluster as a prediction for the unknown users. The algorithms are the following:\\
+For computing the user coefficients, we use the same algorithm \cite[p.6]{nmf1} introduced in Yu and Ridel's paper. \\\\
+\begin{algorithm}[H]
+\SetKwData{Left}{left}
+\SetKwData{This}{this}
+\SetKwData{Up}{up}
+\SetKwFunction{Union}{Union}
+\SetKwFunction{FindCompress}{FindCompress}
+\SetKwInOut{Input}{input}
+\SetKwInOut{Output}{output}
+\Input{User model $W_{train}$, Initial $R_{train}$ with missing values}
+\Output{User coefficients H}
+\BlankLine
+\emph{Initialize H}\;
+\While{not convergent }{
+Compute R' using $R' = W\times H$\\
+Set the corresponding number in $R'$ to be known values in $R_{train}$\\
+Recompute H using $H_{\alpha\mu}$ = $H_{\alpha\mu}\frac{(W^{T}R)_{\alpha\mu}}{(W^{T}WH)_{\alpha\mu}}$
+}
+\caption{User Coefficients Prediction Algorithm}\label{H}
+\end{algorithm}\mbox{}
+Once we have the user coefficients of both training set and testing set, we apply KNN(K-nearest neighbours) on $H_{train}$ and $H_{test}$ for clustering.\\
+\begin{algorithm}
+\SetKwData{Left}{left}
+\SetKwData{This}{this}
+\SetKwData{Up}{up}
+\SetKwFunction{Union}{Union}
+\SetKwFunction{FindCompress}{FindCompress}
+\SetKwInOut{Input}{input}
+\SetKwInOut{Output}{output}
+\Input{User coefficients in training set $H_{train}$\\
+ User coefficients in testing set $H_{test}$\\
+ Clusters for training set $C_{train}$\\
+ Number of clusters k}
+\Output{Predicted clusters for testing set $C_{test}$}
+\BlankLine
+\ForEach{$h_{i}$ \textbf{in} $H_{test}$}{
+Find k nearest points in $H_{train}$ using KNN\\
+For these k nearest points, find the majority of their corresponding clusters in $C_{train}$\\
+Set $c_{i}$ in $C_{test}$ to be that cluster
+}
+\caption{Cluster Prediction Using KNN}\label{KNN}
+\end{algorithm}
+\section{Results}
 
 \begin{figure}[H] 
   \begin{minipage}[H]{0.5\linewidth}\label{ m1cv1} 
