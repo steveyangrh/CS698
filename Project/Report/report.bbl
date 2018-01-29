@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{netflix2007}
+Robert~M. Bell, Yehuda Koren, and Chris Volinsky.
+\newblock The bellkor solution to the netflix prize, 2007.
+
+\bibitem{netflix}
+James Bennett, Stan Lanning, and Netflix Netflix.
+\newblock The netflix prize.
+\newblock In {\em In KDD Cup and Workshop in conjunction with KDD}, 2007.
+
+\bibitem{expedia1}
+Anwar~Shaikh Gourav G.~Shenoy, Mangirish A.~Wagle.
+\newblock Kaggle competition: Expedia hotel recommendations.
+\newblock Technical report, Indiana University, 2015.
+
+\bibitem{kaggle}
+Kaggle.
+\newblock Expedia hotel recommendations, 2016.
+\newblock Accessed: 2017-11-03.
+
+\bibitem{nmfalg}
+Daniel~D. Lee and H.~Sebastian Seung.
+\newblock Algorithms for non-negative matrix factorization.
+\newblock In T.~K. Leen, T.~G. Dietterich, and V.~Tresp, editors, {\em Advances
+  in Neural Information Processing Systems 13}, pages 556--562. MIT Press,
+  2001.
+
+\bibitem{nmf1}
+Hong Yu and Mark~O Riedl.
+\newblock Personalized interactive narratives via sequential recommendation of
+  plot points.
+\newblock {\em IEEE Transactions on Computational Intelligence and AI in
+  Games}, 6(2):174--187, 2014.
+
+\end{thebibliography}

@@ -1,4 +1,4 @@
-function [w] = lasso(X,y,w,lambda)
+function [w] = lasso(X,y,lambda)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
     error = inf;

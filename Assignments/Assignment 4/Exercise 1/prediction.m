@@ -1,4 +1,3 @@
-
 function [error_rate,y_prediction] = prediction(Xtrain,ytrain,Xtest,ytest,K,pca_value)
     [n,d] = size(Xtrain);
     %get the size of the training matrix

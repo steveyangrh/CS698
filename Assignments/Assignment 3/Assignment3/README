@@ -1,0 +1,26 @@
+CS 698
+Assignment 3
+Name: Ronghao Yang
+ID: 20511820
+
+To verify the results for Assignment 3, please run the following matlab scripts in exercise1 folder
+
+1. e12.m
+
+e12.m generates the results for exercise 1.2
+
+2. e13.m
+
+e13.m generates the results for exercise 1.3
+
+3. e14.m
+
+e14.m generates the results for exercise 1.4
+The following parameters can be tunned for different results:
+	lambda
+	kernel = 'linear' or 'gaussian' or 'polynomial'
+	epsilon
+
+
+
+

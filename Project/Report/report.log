@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 NOV 2017 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 DEC 2017 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,6 +411,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \@nipsabovecaptionskip=\skip43
 \@nipsbelowcaptionskip=\skip44
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count99
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -434,7 +441,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count99
+\Gread@gobject=\count100
 ))
 \Gin@req@height=\dimen118
 \Gin@req@width=\dimen119
@@ -451,12 +458,12 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen127
 \cmidrulekern=\dimen128
 \defaultaddspace=\dimen129
-\@cmidla=\count100
-\@cmidlb=\count101
+\@cmidla=\count101
+\@cmidlb=\count102
 \@aboverulesep=\dimen130
 \@belowrulesep=\dimen131
-\@thisruleclass=\count102
-\@lastruleclass=\count103
+\@thisruleclass=\count103
+\@lastruleclass=\count104
 \@thisrulewidth=\dimen132
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
@@ -464,15 +471,15 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen133
 \extrarowheight=\dimen134
 \NC@list=\toks22
-\extratabsurround=\skip45
-\backup@length=\skip46
+\extratabsurround=\skip47
+\backup@length=\skip48
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
-\pltopsep=\skip47
-\plpartopsep=\skip48
-\plitemsep=\skip49
-\plparsep=\skip50
+\pltopsep=\skip49
+\plpartopsep=\skip50
+\plitemsep=\skip51
+\plparsep=\skip52
 \pl@lab=\toks23
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
@@ -498,44 +505,44 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen140
 \caption@hangindent=\dimen141
 )
-\c@ContinuedFloat=\count104
+\c@ContinuedFloat=\count105
 Package caption Info: float package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@KVtest=\count105
-\sf@farskip=\skip51
+\c@KVtest=\count106
+\sf@farskip=\skip53
 \sf@captopadj=\dimen142
-\sf@capskip=\skip52
-\sf@nearskip=\skip53
-\c@subfigure=\count106
-\c@subfigure@save=\count107
-\c@lofdepth=\count108
-\c@subtable=\count109
-\c@subtable@save=\count110
-\c@lotdepth=\count111
-\sf@top=\skip54
-\sf@bottom=\skip55
+\sf@capskip=\skip54
+\sf@nearskip=\skip55
+\c@subfigure=\count107
+\c@subfigure@save=\count108
+\c@lofdepth=\count109
+\c@subtable=\count110
+\c@subtable@save=\count111
+\c@lotdepth=\count112
+\sf@top=\skip56
+\sf@bottom=\skip57
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip56
-\f@ncyO@elh=\skip57
-\f@ncyO@erh=\skip58
-\f@ncyO@olh=\skip59
-\f@ncyO@orh=\skip60
-\f@ncyO@elf=\skip61
-\f@ncyO@erf=\skip62
-\f@ncyO@olf=\skip63
-\f@ncyO@orf=\skip64
+\fancy@headwidth=\skip58
+\f@ncyO@elh=\skip59
+\f@ncyO@erh=\skip60
+\f@ncyO@olh=\skip61
+\f@ncyO@orh=\skip62
+\f@ncyO@elf=\skip63
+\f@ncyO@erf=\skip64
+\f@ncyO@olf=\skip65
+\f@ncyO@orf=\skip66
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count112
+\c@AlgoLine=\count113
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip65
+\algocf@hangindent=\skip67
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -550,38 +557,38 @@ Package `algorithm2e' Release 5.1 -- october 19 2015 --
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 - Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
 ********************************************************
-\skiptotal=\skip66
-\skiplinenumber=\skip67
-\skiprule=\skip68
-\skiphlne=\skip69
-\skiptext=\skip70
-\skiplength=\skip71
-\algomargin=\skip72
-\skipalgocfslide=\skip73
+\skiptotal=\skip68
+\skiplinenumber=\skip69
+\skiprule=\skip70
+\skiphlne=\skip71
+\skiptext=\skip72
+\skiplength=\skip73
+\algomargin=\skip74
+\skipalgocfslide=\skip75
 \algowidth=\dimen143
 \inoutsize=\dimen144
 \inoutindent=\dimen145
 \interspacetitleruled=\dimen146
 \interspacealgoruled=\dimen147
 \interspacetitleboxruled=\dimen148
-\algocf@ruledwidth=\skip74
+\algocf@ruledwidth=\skip76
 \algocf@inoutbox=\box30
 \algocf@inputbox=\box31
-\AlCapSkip=\skip75
-\AlCapHSkip=\skip76
-\algoskipindent=\skip77
+\AlCapSkip=\skip77
+\AlCapHSkip=\skip78
+\algoskipindent=\skip79
 \algocf@nlbox=\box32
 \algocf@hangingbox=\box33
 \algocf@untilbox=\box34
-\algocf@skipuntil=\skip78
+\algocf@skipuntil=\skip80
 \algocf@capbox=\box35
-\algoheightruledefault=\skip79
-\algoheightrule=\skip80
-\algotitleheightruledefault=\skip81
-\algotitleheightrule=\skip82
-\c@algocfline=\count113
-\c@algocfproc=\count114
-\c@algocf=\count115
+\algoheightruledefault=\skip81
+\algoheightrule=\skip82
+\algotitleheightruledefault=\skip83
+\algotitleheightrule=\skip84
+\c@algocfline=\count114
+\c@algocfproc=\count115
+\c@algocf=\count116
 \algocf@algoframe=\box36
 \algocf@algobox=\box37
 )
@@ -606,45 +613,61 @@ Package tocbibind Note: Using section or other style headings.
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
-\cftparskip=\skip83
-\cftbeforetoctitleskip=\skip84
-\cftaftertoctitleskip=\skip85
-\cftbeforepartskip=\skip86
-\cftpartnumwidth=\skip87
-\cftpartindent=\skip88
-\cftbeforesecskip=\skip89
-\cftsecindent=\skip90
-\cftsecnumwidth=\skip91
-\cftbeforesubsecskip=\skip92
-\cftsubsecindent=\skip93
-\cftsubsecnumwidth=\skip94
-\cftbeforesubsubsecskip=\skip95
-\cftsubsubsecindent=\skip96
-\cftsubsubsecnumwidth=\skip97
-\cftbeforeparaskip=\skip98
-\cftparaindent=\skip99
-\cftparanumwidth=\skip100
-\cftbeforesubparaskip=\skip101
-\cftsubparaindent=\skip102
-\cftsubparanumwidth=\skip103
-\cftbeforeloftitleskip=\skip104
-\cftafterloftitleskip=\skip105
-\cftbeforefigskip=\skip106
-\cftfigindent=\skip107
-\cftfignumwidth=\skip108
-\cftbeforelottitleskip=\skip109
-\cftafterlottitleskip=\skip110
-\cftbeforetabskip=\skip111
-\cfttabindent=\skip112
-\cfttabnumwidth=\skip113
-\cftbeforesubfigskip=\skip114
-\cftsubfigindent=\skip115
-\cftsubfignumwidth=\skip116
-\cftbeforesubtabskip=\skip117
-\cftsubtabindent=\skip118
-\cftsubtabnumwidth=\skip119
+\cftparskip=\skip85
+\cftbeforetoctitleskip=\skip86
+\cftaftertoctitleskip=\skip87
+\cftbeforepartskip=\skip88
+\cftpartnumwidth=\skip89
+\cftpartindent=\skip90
+\cftbeforesecskip=\skip91
+\cftsecindent=\skip92
+\cftsecnumwidth=\skip93
+\cftbeforesubsecskip=\skip94
+\cftsubsecindent=\skip95
+\cftsubsecnumwidth=\skip96
+\cftbeforesubsubsecskip=\skip97
+\cftsubsubsecindent=\skip98
+\cftsubsubsecnumwidth=\skip99
+\cftbeforeparaskip=\skip100
+\cftparaindent=\skip101
+\cftparanumwidth=\skip102
+\cftbeforesubparaskip=\skip103
+\cftsubparaindent=\skip104
+\cftsubparanumwidth=\skip105
+\cftbeforeloftitleskip=\skip106
+\cftafterloftitleskip=\skip107
+\cftbeforefigskip=\skip108
+\cftfigindent=\skip109
+\cftfignumwidth=\skip110
+\cftbeforelottitleskip=\skip111
+\cftafterlottitleskip=\skip112
+\cftbeforetabskip=\skip113
+\cfttabindent=\skip114
+\cfttabnumwidth=\skip115
+\cftbeforesubfigskip=\skip116
+\cftsubfigindent=\skip117
+\cftsubfignumwidth=\skip118
+\cftbeforesubtabskip=\skip119
+\cftsubtabindent=\skip120
+\cftsubtabnumwidth=\skip121
 )
-(./report.aux)
+(./report.aux
+
+LaTeX Warning: Label ` m1cv1' multiply defined.
+
+
+LaTeX Warning: Label `fig:awesome_image1' multiply defined.
+
+
+LaTeX Warning: Label `fig:awesome_image2' multiply defined.
+
+
+LaTeX Warning: Label `fig:awesome_image3' multiply defined.
+
+
+LaTeX Warning: Label ` m1cv1' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -696,16 +719,16 @@ LaTeX Font Info:    ... okay on input line 71.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
+\scratchcounter=\count117
 \scratchdimen=\dimen149
 \scratchbox=\box38
-\nofMPsegments=\count117
-\nofMParguments=\count118
+\nofMPsegments=\count118
+\nofMParguments=\count119
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count119
+\MPscratchCnt=\count120
 \MPscratchDim=\dimen150
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
@@ -774,125 +797,162 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 78.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 82.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 82.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 83.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
-
-<images/mySelfieOriginal.png, id=1, 692.5875pt x 721.94719pt>
-File: images/mySelfieOriginal.png Graphic file (type png)
-
-<use images/mySelfieOriginal.png>
-Package pdftex.def Info: images/mySelfieOriginal.png used on input line 95.
-(pdftex.def)             Requested size: 99.37125pt x 103.58356pt.
-
-<images/mySelfie50M100R.png, id=2, 692.5875pt x 721.94719pt>
-File: images/mySelfie50M100R.png Graphic file (type png)
-
-<use images/mySelfie50M100R.png>
-Package pdftex.def Info: images/mySelfie50M100R.png used on input line 99.
-(pdftex.def)             Requested size: 99.37125pt x 103.58356pt.
-
-Underfull \hbox (badness 1043) in paragraph at lines 100--100
-[]\OT1/ptm/m/n/10 Figure 2: |Face re-con-
- []
-
-<images/mySelfie90M100R.png, id=3, 692.5875pt x 721.94719pt>
-File: images/mySelfie90M100R.png Graphic file (type png)
-
-<use images/mySelfie90M100R.png>
-Package pdftex.def Info: images/mySelfie90M100R.png used on input line 103.
-(pdftex.def)             Requested size: 99.37125pt x 103.58356pt.
-
-Underfull \hbox (badness 1043) in paragraph at lines 104--104
-[]\OT1/ptm/m/n/10 Figure 3: |Face re-con-
- []
-
-[1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
+ [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/prefixrating.png, id=18, 300.12125pt x 124.465pt>
+<images/prefixrating.png, id=13, 300.12125pt x 124.465pt>
 File: images/prefixrating.png Graphic file (type png)
 
 <use images/prefixrating.png>
-Package pdftex.def Info: images/prefixrating.png used on input line 113.
+Package pdftex.def Info: images/prefixrating.png used on input line 106.
 (pdftex.def)             Requested size: 198.7425pt x 82.42442pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
-
- []
-
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 123.
-[2 <./images/mySelfieOriginal.png (PNG copy)> <./images/mySelfie50M100R.png (PN
-G copy)> <./images/mySelfie90M100R.png (PNG copy)> <./images/prefixrating.png>]
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 116.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--154
+Underfull \vbox (badness 1502) has occurred while \output is active []
+
+ [2 <./images/prefixrating.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 127--149
 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 175.
-[3] <images/m1CV1.jpg, id=31, 562.1pt x 421.575pt>
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 170.
+
+<images/m1CV1.jpg, id=25, 562.1pt x 421.575pt>
 File: images/m1CV1.jpg Graphic file (type jpg)
  <use images/m1CV1.jpg>
-Package pdftex.def Info: images/m1CV1.jpg used on input line 181.
+Package pdftex.def Info: images/m1CV1.jpg used on input line 176.
 (pdftex.def)             Requested size: 198.7425pt x 149.05228pt.
 
-<images/m1CV2.jpg, id=32, 562.1pt x 421.575pt>
+<images/m1CV2.jpg, id=26, 562.1pt x 421.575pt>
 File: images/m1CV2.jpg Graphic file (type jpg)
  <use images/m1CV2.jpg>
-Package pdftex.def Info: images/m1CV2.jpg used on input line 185.
+Package pdftex.def Info: images/m1CV2.jpg used on input line 180.
 (pdftex.def)             Requested size: 198.7425pt x 149.05228pt.
 
-<images/m1NoCV.jpg, id=33, 562.1pt x 421.575pt>
-File: images/m1NoCV.jpg Graphic file (type jpg)
- <use images/m1NoCV.jpg>
-Package pdftex.def Info: images/m1NoCV.jpg used on input line 189.
-(pdftex.def)             Requested size: 198.7425pt x 149.05228pt.
-
-Overfull \hbox (1.90002pt too wide) in paragraph at lines 180--193
+Overfull \hbox (1.90002pt too wide) in paragraph at lines 175--184
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 175--184
 
  []
 
-[4 <./images/m1CV1.jpg> <./images/m1CV2.jpg> <./images/m1NoCV.jpg>] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 249--253
-[]\OT1/ptm/m/n/10 Kaggle- Ex-pe-dia Ho-tel Rec-om-men-da-tions, \OT1/ptm/m/it/1
-0 https://www.kaggle. com/c/expedia-hotel-
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--184
+
  []
 
-[6] (./report.aux) )
+[4 <./images/m1CV1.jpg> <./images/m1CV2.jpg>]
+<images/mySelfieOriginal.png, id=34, 692.5875pt x 721.94719pt>
+File: images/mySelfieOriginal.png Graphic file (type png)
+
+<use images/mySelfieOriginal.png>
+Package pdftex.def Info: images/mySelfieOriginal.png used on input line 220.
+(pdftex.def)             Requested size: 127.1981pt x 132.58873pt.
+
+<images/mySelfie50M100R.png, id=35, 692.5875pt x 721.94719pt>
+File: images/mySelfie50M100R.png Graphic file (type png)
+
+<use images/mySelfie50M100R.png>
+Package pdftex.def Info: images/mySelfie50M100R.png used on input line 230.
+(pdftex.def)             Requested size: 127.1981pt x 132.58873pt.
+
+<images/mySelfie90M100R.png, id=36, 692.5875pt x 721.94719pt>
+File: images/mySelfie90M100R.png Graphic file (type png)
+
+<use images/mySelfie90M100R.png>
+Package pdftex.def Info: images/mySelfie90M100R.png used on input line 234.
+(pdftex.def)             Requested size: 127.1981pt x 132.58873pt.
+
+<images/mySelfie95M100R.png, id=37, 923.45pt x 962.59625pt>
+File: images/mySelfie95M100R.png Graphic file (type png)
+
+<use images/mySelfie95M100R.png>
+Package pdftex.def Info: images/mySelfie95M100R.png used on input line 238.
+(pdftex.def)             Requested size: 127.1981pt x 132.58873pt.
+ [5 <./images/mySelfieOriginal.png (PNG copy)>] <images/mySelfie50M5R.png, id=4
+1, 692.5875pt x 721.94719pt>
+File: images/mySelfie50M5R.png Graphic file (type png)
+
+<use images/mySelfie50M5R.png>
+Package pdftex.def Info: images/mySelfie50M5R.png used on input line 247.
+(pdftex.def)             Requested size: 127.1981pt x 132.58873pt.
+File: images/mySelfie50M100R.png Graphic file (type png)
+ <use images/mySelfie50M100R.png>
+Package pdftex.def Info: images/mySelfie50M100R.png used on input line 251.
+(pdftex.def)             Requested size: 127.1981pt x 132.58873pt.
+
+<images/mySelfie50M200R.png, id=42, 692.5875pt x 721.94719pt>
+File: images/mySelfie50M200R.png Graphic file (type png)
+
+<use images/mySelfie50M200R.png>
+Package pdftex.def Info: images/mySelfie50M200R.png used on input line 255.
+(pdftex.def)             Requested size: 127.1981pt x 132.58873pt.
+
+<images/matrixSize.png, id=43, 562.1pt x 421.575pt>
+File: images/matrixSize.png Graphic file (type png)
+
+<use images/matrixSize.png>
+Package pdftex.def Info: images/matrixSize.png used on input line 265.
+(pdftex.def)             Requested size: 258.36281pt x 193.77246pt.
+ [6 <./images/mySelfie50M100R.png (PNG copy)> <./images/mySelfie90M100R.png (PN
+G copy)> <./images/mySelfie95M100R.png> <./images/mySelfie50M5R.png (PNG copy)>
+ <./images/mySelfie50M200R.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 276--291
+
+ []
+
+[7 <./images/matrixSize.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 292--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
+
+ []
+
+(./report.bbl
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+ [8])
+[9] (./report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5774 strings out of 492995
- 87256 string characters out of 6132704
- 177835 words of memory out of 5000000
- 9216 multiletter control sequences out of 15000+600000
+ 6135 strings out of 492995
+ 91862 string characters out of 6132704
+ 183721 words of memory out of 5000000
+ 9567 multiletter control sequences out of 15000+600000
  28249 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,43p,632b,2596s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,43p,859b,2575s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -908,10 +968,10 @@ xlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
 dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on report.pdf (6 pages, 1996703 bytes).
+Output written on report.pdf (9 pages, 3638075 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
